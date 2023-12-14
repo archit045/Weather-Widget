@@ -1,0 +1,139 @@
+
+.bccolor{
+          background-color: skyblue;
+          height: 700px;
+          width: 1350px;
+          align-items: center;
+          align-content: center;
+}
+.body{
+      background-color: greenyellow;
+      height: 650px;
+      width: 1300px;
+      border: 6px solid grey;
+      border-radius: 4px;
+      margin-left: 40px;
+      margin-bottom: 100px;
+}
+.h1{
+    padding-top: 10px;
+    text-align: center;
+}
+.infor{
+        text-align: right;
+        padding-right: 250px;
+        margin-top: 20px;
+}
+
+#wind{
+        padding-right: 40px;
+}
+
+#precip{
+       padding-right: 15px;
+}
+
+.day{
+ 
+       display: flex;    
+       justify-content: space-between;
+}
+#fri{
+       padding-right: 100px;
+}
+#sat{
+       padding-left: 120px;
+}
+#sun{
+       padding-left: 15px;
+}
+
+.climate{
+         padding-left: 100px;
+}
+#sunimg{
+         width: 100px;
+         height: 100px;
+}
+.degree{
+        text-align: right;
+        padding-right: 450px;
+        margin-top: 20px;
+}
+.weimg{
+        margin-bottom: 10px;
+    display: flex;    
+  justify-content: space-between;
+}
+#bij1{
+   height: 50px;
+   width: 50px;
+   padding-left: 140px;
+}
+#clou1{
+    height: 50px;
+    width: 50px;
+}
+#clou21{
+    height: 50px;
+    width: 50px;
+}
+#rain1{
+    height: 50px;
+    width: 50px;
+}
+#sun1{
+    height: 50px;
+    width: 50px;
+}
+#bij2{
+    height: 50px;
+    width: 50px;
+}
+#clou2{
+    height: 50px;
+    width: 50px;
+    padding-right: 140px;
+}
+.weather{
+    padding-bottom: 10px;
+    display: flex;    
+    justify-content: space-between;
+}
+#we1{
+    padding-left: 130px;
+}
+#we7{
+    padding-right: 130px;
+}
+#fri1{
+    padding-right: 60px;
+}
+#sat1{
+    padding-left: 90px;
+}
+#sun1{
+    padding-left: 10px;
+}
+#mon1{
+    padding-left: 50px;
+}
+#thu1{
+    padding-right: 10px;
+}
+#haze1{
+    height: 100px;
+    width: 100px;
+}
+.weimg{
+    display: flex;
+    height: 55px;
+    padding-left: 120px;
+}
+.Search{
+    justify-content: space-between;
+    margin-left: 10px;
+}
+.button{
+    margin-left: 10px;
+}

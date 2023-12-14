@@ -1,0 +1,65 @@
+<div class="container">
+    <div class="bccolor">
+      <div class="body" *ngIf="weatherdata">
+        <div class="h1" >
+
+          <!-- City and Counrty code description for the current day  -->
+          <h1 >{{weatherdata.city}},{{weatherdata.country}}</h1>
+        </div>
+        <div>
+          <form class="Search" (ngSubmit)="onSubmit()">
+            <input [(ngModel)]="city" type="text" name="city" placeholder="Enter city name" />
+            <button class="button" type="submit">Search</button>
+          </form>
+        </div>
+        <!-- The weather wind,precip and pressure  description for the current day  -->
+       <div class="infor">
+        <h3 id="wind">Wind : {{weatherdata.wind}} m/s</h3>
+       <h3  id="precip">Precip : {{weatherdata.precip}} mm/hr</h3>
+       <h3  id="pressure"> Pressure: {{weatherdata.pressure}} mb</h3>
+       </div>
+        <!-- archit thakur weather widget aappppppp -->
+       <!-- The weather temprature description for the current day  -->
+       <div class="degree">
+        <h1> {{weatherdata.temperature}}°C</h1>
+       </div>
+
+         <!-- The weather description and image for the current day  -->
+        <div class="climate">
+          <img [src]="getWeatherIconUrl(weatherdata.weather.icon)" alt="" id="haze1"/>
+        <h2 >{{weatherdata.description}}</h2>
+       </div>
+
+        <!-- The weather day description for the seven days  -->
+       <div class="day">
+        <h3 id="sat">WED</h3>
+        <h3 id="sun">THU</h3>
+        <h3 >FRI</h3>
+        <h3 id="tue">SAT</h3>
+        <h3>SUN</h3>
+        <h3>MON</h3>
+        <h3 id="fri">TUE</h3>
+        </div>
+        <!-- The weather image description for the seven days  -->
+        <!-- <div class="weimg">
+          <img [src]="getWeatherIconUrl(weather.weather111.icon)" alt="" />
+          <img [src]="getWeatherIconUrl(weather.weather222.icon)" alt="" id="sun"/>
+          <img [src]="getWeatherIconUrl(weather.weather333.icon)" alt="" />
+          <img [src]="getWeatherIconUrl(weather.weather444.icon)" alt="" id="tue"/>
+          <img [src]="getWeatherIconUrl(weather.weather555.icon)" alt="" />
+          <img [src]="getWeatherIconUrl(weather.weather666.icon)" alt="" >
+          <img [src]="getWeatherIconUrl(weather.weather777.icon)" alt="" id="fri"/>
+      </div> -->
+       <!-- The weather description for the seven days  -->
+      <!-- <div class="weather" *ngIf="weather">
+          <h3 id="sat1">{{weather.weather1}}°C/{{weather.weather11}}°C</h3>
+          <h3 id="sun1">{{weather.weather2}}°C/{{weather.weather22}}°C</h3>
+          <h3 id="mon1">{{weather.weather3}}°C/{{weather.weather33}}°C</h3>
+          <h3 id="tue1">{{weather.weather4}}°C/{{weather.weather44}}°C</h3>
+          <h3 id="wed1">{{weather.weather5}}°C/{{weather.weather55}}°C</h3>
+          <h3 id="thu1">{{weather.weather6}}°C/{{weather.weather66}}°C</h3>
+          <h3 id="fri1">{{weather.weather7}}°C/{{weather.weather77}}°C</h3>
+      </div>
+    </div> -->
+</div>
+</div>
